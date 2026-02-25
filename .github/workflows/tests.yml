@@ -1,0 +1,44 @@
+name: Linter
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  code-quality:
+    name: Code quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+
+      - name: Composer install
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+      - name: Run Pint
+        run: vendor/bin/pint --test
+
+      - name: Run phpstan
+        run: vendor/bin/phpstan analyse src config tests
+
+      - name: Run phpcs
+        run: vendor/bin/phpcs
+
+      - name: Run psalm
+        run: vendor/bin/psalm
+
+      - name: Run tests
+        run: vendor/bin/phpunit

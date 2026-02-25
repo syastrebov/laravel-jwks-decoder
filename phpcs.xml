@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org" name="Laravel Project Standard">
+    <description>The custom coding standard for this Laravel application.</description>
+
+    <arg name="colors"/>
+    <arg name="extensions" value="php"/>
+    <arg name="parallel" value="80"/>
+    <arg value="p"/>
+
+    <file>src</file>
+    <file>config</file>
+
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>_ide_helper.php</exclude-pattern>
+
+    <rule ref="PSR12"/>
+
+    <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
+        <exclude-pattern>./tests/*</exclude-pattern>
+    </rule>
+
+    <rule ref="Generic.PHP.ForbiddenFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array">
+                <element key="dd" value="null"/>
+                <element key="dump" value="null"/>
+                <element key="var_dump" value="null"/>
+                <element key="eval" value="null"/>
+                <element key="die" value="null"/>
+            </property>
+        </properties>
+    </rule>
+</ruleset>
