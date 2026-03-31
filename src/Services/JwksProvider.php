@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JwksDecoder\Services;
+namespace JwksDecoder\Laravel\Services;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 use Illuminate\Http\Client\Factory as HttpFactory;

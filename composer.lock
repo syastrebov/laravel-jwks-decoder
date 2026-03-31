@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b37e2e0fab4a5bbf62522a896b542c8c",
+    "content-hash": "66fd41755bf9f82bab7cfe2d87a6d761",
     "packages": [
         {
             "name": "brick/math",
@@ -3153,6 +3153,53 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
             "time": "2025-12-14T04:43:48+00:00"
+        },
+        {
+            "name": "syastrebov/jwks-decoder",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/syastrebov/jwks-decoder.git",
+                "reference": "496617f5a396c8d9498b65ee2bcc46fe9eff6a6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/syastrebov/jwks-decoder/zipball/496617f5a396c8d9498b65ee2bcc46fe9eff6a6d",
+                "reference": "496617f5a396c8d9498b65ee2bcc46fe9eff6a6d",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "^7.0",
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.27",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^13.0",
+                "squizlabs/php_codesniffer": "^4.0",
+                "vimeo/psalm": "^6.15"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JwksDecoder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "syastrebov",
+                    "email": "serg.yastrebov@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/syastrebov/jwks-decoder/issues",
+                "source": "https://github.com/syastrebov/jwks-decoder/tree/v0.1"
+            },
+            "time": "2026-03-31T18:17:49+00:00"
         },
         {
             "name": "symfony/clock",

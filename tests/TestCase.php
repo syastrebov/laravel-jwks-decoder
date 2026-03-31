@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use JwksDecoder\Providers\JwksServiceProvider;
+use JwksDecoder\Laravel\Providers\JwksServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

@@ -3,7 +3,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "JwksDecoder\\": "src/"
+            "JwksDecoder\\Laravel\\": "src/"
         }
     },
     "autoload-dev": {
@@ -19,10 +19,10 @@
     ],
     "require": {
         "php": "^8.4",
-        "firebase/php-jwt": "^7.0",
         "illuminate/http": "^12.0",
         "illuminate/cache": "^12.0",
-        "illuminate/support": "^12.0"
+        "illuminate/support": "^12.0",
+        "syastrebov/jwks-decoder": "^0.1.0"
     },
     "require-dev": {
         "orchestra/testbench": "^10.9",

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JwksDecoder\Providers;
+namespace JwksDecoder\Laravel\Providers;
 
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Contracts\Container\Container;
@@ -10,7 +10,7 @@ use Illuminate\Support\ServiceProvider;
 use JwksDecoder\Contracts\JwksDecoderInterface;
 use JwksDecoder\Contracts\JwksProviderInterface;
 use JwksDecoder\Services\JwksDecoder;
-use JwksDecoder\Services\JwksProvider;
+use JwksDecoder\Laravel\Services\JwksProvider;
 
 final class JwksServiceProvider extends ServiceProvider
 {

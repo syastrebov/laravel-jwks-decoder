@@ -6,7 +6,7 @@ namespace Tests\Unit\Services;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
-use JwksDecoder\Services\JwksProvider;
+use JwksDecoder\Laravel\Services\JwksProvider;
 use Tests\TestCase;
 
 final class JwksProviderTest extends TestCase
